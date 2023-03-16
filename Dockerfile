@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:3.16
+FROM akemery/baseimage-rdesktop-web
 
 # set version label
 ARG BUILD_DATE
