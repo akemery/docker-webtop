@@ -21,7 +21,7 @@ RUN \
     thunar \
     xfce4 \
     xfce4-terminal && \
-  apt-get install -y --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+  apt-get install -y  \
     xfce4-pulseaudio-plugin && \
   echo "**** cleanup ****" && \
   rm -f /usr/share/xfce4/panel/plugins/power-manager-plugin.desktop && \
