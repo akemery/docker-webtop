@@ -10,7 +10,7 @@ LABEL maintainer="thelamer"
 
 RUN \
   echo "**** install packages ****" && \
-  apt-get update && apt-get upgrade\
+  apt-get update && apt-get upgrade &&\
   apt-get install \
     faenza-icon-theme \
     faenza-icon-theme-xfce4-appfinder \
