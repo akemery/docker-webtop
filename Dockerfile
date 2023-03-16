@@ -21,6 +21,7 @@ RUN \
     thunar \
     xfce4 \
     xfce4-terminal && \
+  DEBIAN_FRONTEND=noninteractive \
   apt-get install -y  \
     xfce4-pulseaudio-plugin && \
   echo "**** cleanup ****" && \
