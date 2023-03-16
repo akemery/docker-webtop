@@ -13,8 +13,8 @@ RUN \
   apt-get update && apt-get upgrade -y &&\
   apt-get install -y \
     faenza-icon-theme \
-    faenza-icon-theme-xfce4-appfinder \
-    faenza-icon-theme-xfce4-panel \
+#    faenza-icon-theme-xfce4-appfinder \
+#    faenza-icon-theme-xfce4-panel \
     firefox \
     mousepad \
     thunar \
