@@ -11,7 +11,7 @@ LABEL maintainer="thelamer"
 RUN \
   echo "**** install packages ****" && \
   apt-get update && apt-get upgrade &&\
-  apt-get install \
+  apt-get install -y \
     faenza-icon-theme \
     faenza-icon-theme-xfce4-appfinder \
     faenza-icon-theme-xfce4-panel \
@@ -20,7 +20,7 @@ RUN \
     thunar \
     xfce4 \
     xfce4-terminal && \
-  apt-get install --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+  apt-get install -y --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
     xfce4-pulseaudio-plugin && \
   echo "**** cleanup ****" && \
   rm -f /usr/share/xfce4/panel/plugins/power-manager-plugin.desktop && \
