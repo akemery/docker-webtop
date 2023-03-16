@@ -11,7 +11,8 @@ LABEL maintainer="thelamer"
 RUN \
   echo "**** install packages ****" && \
   apt-get update && apt-get upgrade -y &&\
-  apt-get install -y DEBIAN_FRONTEND=noninteractive \
+  DEBIAN_FRONTEND=noninteractive \
+  apt-get install -y  \
     faenza-icon-theme \
 #    faenza-icon-theme-xfce4-appfinder \
 #    faenza-icon-theme-xfce4-panel \
