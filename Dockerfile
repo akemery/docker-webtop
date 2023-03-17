@@ -40,7 +40,7 @@ VOLUME /config
 ## Build INGInious base
 
 # DOCKER-VERSION 1.1.0
-FROM    rockylinux:8
+#FROM    rockylinux:8
 
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
@@ -50,7 +50,7 @@ LABEL org.inginious.grading.agent_version=3
 
 # Install python, needed for scripts used in INGInious + locale support
 RUN      \
-        apt  update -y && \
+        apt-get  update  && \
         apt  upgrade -y && \
         apt-get install -y  language-pack-en language-pack-gnome-en language-pack-en-base language-pack-gnome-en-base && \
        # dnf -y install epel-release && \
