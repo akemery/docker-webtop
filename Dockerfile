@@ -44,6 +44,7 @@ LABEL org.inginious.grading.agent_version=3
 
 # Install python, needed for scripts used in INGInious + locale support
 RUN      \
+        echo "**** Start building INGInious *********"
         apt-get  update  && \
         apt  upgrade -y && \
         apt-get install -y  language-pack-en language-pack-gnome-en language-pack-en-base language-pack-gnome-en-base && \
