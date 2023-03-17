@@ -50,8 +50,7 @@ LABEL org.inginious.grading.agent_version=3
 
 # Install python, needed for scripts used in INGInious + locale support
 RUN      \
-        apt-get install -y  language-pack-en language-pack-gnome-en language-pack-en-base language-pack-gnome-en-base 
- && \
+        apt-get install -y  language-pack-en language-pack-gnome-en language-pack-en-base language-pack-gnome-en-base && \
        # dnf -y install epel-release && \
         apt-get  upgrade -y && \
         apt-get  install -y python38 python38-pip python38-devel zip unzip tar sed openssh-server openssl bind-utils iproute file jq procps-ng man curl net-tools screen nano bc  && \
