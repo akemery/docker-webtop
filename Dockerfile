@@ -55,7 +55,7 @@ RUN      \
         apt-get install -y  language-pack-en language-pack-gnome-en language-pack-en-base language-pack-gnome-en-base && \
        # dnf -y install epel-release && \
         apt-get  install -y python3 python3-pip python3-dev zip unzip tar sed openssh-server openssl bind9-utils iproute2 file jq procps man curl net-tools screen nano bc  && \
-        pip3.8 install msgpack pyzmq jinja2 PyYAML timeout-decorator ipython mypy
+        pip3 install msgpack pyzmq jinja2 PyYAML timeout-decorator ipython mypy
         # dnf clean all
 
 # Allow to run commands
