@@ -4,3 +4,5 @@
 ARG   VERSION=latest
 FROM  akemery/inginious-c-base-webtop:${VERSION}
 LABEL org.inginious.grading.name="webtop-default"
+
+EXPOSE 3000
