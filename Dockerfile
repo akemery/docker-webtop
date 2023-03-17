@@ -88,4 +88,4 @@ EXPOSE 3000
 
 VOLUME /config
 
-## CMD ["INGInious"]
+CMD ["INGInious"]
