@@ -14,8 +14,8 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
   apt-get install -y  \
     faenza-icon-theme \
-#    faenza-icon-theme-xfce4-appfinder \
-#    faenza-icon-theme-xfce4-panel \
+    xfce4-appfinder \
+    xfce4-panel \
     firefox \
     mousepad \
     thunar \
