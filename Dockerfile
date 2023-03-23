@@ -29,6 +29,9 @@ RUN \
   rm -rf \
     /tmp/*
 
+# add local files
+COPY /root /
+
 # ports and volumes
 EXPOSE 3000
 
@@ -84,7 +87,6 @@ RUN     groupadd --gid 4242 worker && \
 RUN     echo -e "LANG=en_US.UTF-8\nLANGUAGE=en_US:en\nLC_ALL=en_US.UTF-8" >> /etc/environment
 RUN     sed -i.bak '/^AcceptEnv/ d' /etc/ssh/sshd_config
 
-# add local files
-COPY /root /
+
 
 CMD ["INGInious"]
