@@ -29,7 +29,10 @@ RUN \
   rm -rf \
     /tmp/*
 
+# ports and volumes
+EXPOSE 3000
 
+VOLUME /config
 
 ## Build INGInious base
 
@@ -83,10 +86,5 @@ RUN     sed -i.bak '/^AcceptEnv/ d' /etc/ssh/sshd_config
 
 # add local files
 COPY /root /
-
-# ports and volumes
-EXPOSE 3000
-
-VOLUME /config
 
 CMD ["INGInious"]
